@@ -1,0 +1,12 @@
+from ultralytics import YOLO
+
+if __name__ == '__main__':
+    model = YOLO(r'')  
+    model.train(data=r'',
+                imgsz=640,
+                epochs=200,
+                patience=20,  
+                batch=16,
+                workers=8,
+                device='0',
+                )
